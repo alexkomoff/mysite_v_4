@@ -1,0 +1,79 @@
+
+body{
+
+    font-family: Calibri, sans-serif;
+    line-height: 1.5;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navi ul{
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+}
+.navi  ul li{
+    margin: 10px;
+}
+.navi ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.button {
+	color: #232323; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.button:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.button:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+.container{
+    display: flex;
+}
+.content-line{
+    text-align: center;
+}
+.button-style{
+    list-style: none;
+    text-decoration: none;
+}
+a.button-style{
+    display: inline-block;
+    background: #2196f3;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+}
